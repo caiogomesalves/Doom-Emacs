@@ -1,19 +1,14 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
 ;;======================================================================
-;; Configuration file to Doom Emacs (>=26.3) by Walmes Zeviani.
+;; Configuration file to Doom Emacs (>=26.3) by Caio Gomes Alves.
 ;;
-;; This file is hosted at https://github.com/walmes/doom-emacs.
+;; This file is hosted at https://github.com/caiogomesalves/Doom-Emacs
 ;;
 ;; Almost all the content available here was obtained/inspired by
-;; queries on the internet. Please, send questions, problems and/or
-;; suggestions as an issue on GitHub project of this file.
+;; Walmes Marques Zeviani's personal configuration, hosted in
+;; https://github.com/walmes/doom-emacs . Without it, this wouldn't be possible.
 ;;======================================================================
-
-;; Some configurations to get inspired.
-;; https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/
-;; https://dotdoom.rgoswami.me/config.html
-;; https://emacs.zdx.cat/
 
 ;;----------------------------------------------------------------------
 ;; http://www.emacswiki.org/wiki/EmacsNiftyTricks
@@ -69,7 +64,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil',
 ;; line numbers are disabled. For relative line numbers, set this to
-;; `relative'.
+;; `relative', or 't' for normal line numbers:
 (setq display-line-numbers-type t)
 
 ;; Here are some additional functions/macros that could help you
@@ -114,7 +109,7 @@
 (setq-default fill-column 72)       ;; Column width.
 
 ;; Highlight whitespace.
-(global-whitespace-mode 0)
+(global-whitespace-mode 0) ;; Disable whitespace-mode
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq whitespace-line-column fill-column)
 (setq whitespace-style '(face lines-tail trailing tabs empty))
@@ -123,7 +118,7 @@
 ;;       (font-spec :family "Noto Sans" :size 12))
 (setq doom-themes-treemacs-enable-variable-pitch nil)
 
-;; When scrolling with the cursor, show 4 lines above/below.
+;; When scrolling with the cursor, show 5 lines above/below.
 (setq scroll-margin 5)
 
 (dolist
@@ -282,7 +277,7 @@
     ))
 
 ;;----------------------------------------------------------------------
-;; Web-mode.
+;; Treemacs.
 
 (use-package! treemacs
   :config
@@ -513,15 +508,33 @@
       ;;-------------------------------------
       (require 'ess-site)
       (require 'ess-view-data)
-      ;; (setq ess-view-data-mode t)
-      (flycheck-mode 0)        ;; Unable flycheck/lintr.
+      (setq ess-view-data-mode t)
+      (flycheck-mode 1)        ;; Unable flycheck/lintr.
       (setq ess-smart-operators t)
       (setq-local comment-add 0) ;; Single # as default.
       (ess-toggle-underscore nil)
       ;;
       ;; https://stackoverflow.com/questions/7502540/make-emacs-ess-follow-r-style-guide
-      ;; (ess-set-style 'C++)
-      (ess-set-style 'RStudio)
+       ;;; ESS
+ (add-hook 'ess-mode-hook
+           (lambda ()
+             (ess-set-style 'C++ 'quiet)
+             ;; Because
+             ;;                                 DEF GNU BSD K&R  C++
+             ;; ess-indent-level                  2   2   8   5  4
+             ;; ess-continued-statement-offset    2   2   8   5  4
+             ;; ess-brace-offset                  0   0  -8  -5 -4
+             ;; ess-arg-function-offset           2   4   0   0  0
+             ;; ess-expression-offset             4   2   8   5  4
+             ;; ess-else-offset                   0   0   0   0  0
+             ;; ess-close-brace-offset            0   0   0   0  0
+             (add-hook 'local-write-file-hooks
+                       (lambda ()
+                         (ess-nuke-trailing-whitespace)))))
+ (setq ess-nuke-trailing-whitespace-p 'ask)
+ ;; or even
+ ;; (setq ess-nuke-trailing-whitespace-p t)
+      ;; (ess-set-style 'RStudio)
       ;; (setq ess-offset-arguments 'prev-line)
       ;; (set 'ess-arg-function-offset t)
       ;;

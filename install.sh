@@ -11,7 +11,7 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 
 # Brings my persional configuration.
 rm -rf ~/.doom.d/
-git clone git@github.com:walmes/doom-emacs.git ~/.doom.d/
+git clone git@github.com:caiogomesalves/Doom-Emacs.git ~/.doom.d/
 
 # Upgrade Doom-emacs.
 ~/.emacs.d/bin/doom upgrade
