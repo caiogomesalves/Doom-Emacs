@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-errorbar
+# key: ge;
+# --
+geom_errorbar(mapping = aes(ymin = $1, ymax = $2))$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: code-chunk-plot
+# key: ccp>
+# --
+\`\`\`{r, out.width = "${1:400px}", fig.cap = cap, echo = FALSE, message = FALSE, warning = FALSE}
+cap <- "${2:FIXME.}"
+$0
+\`\`\`

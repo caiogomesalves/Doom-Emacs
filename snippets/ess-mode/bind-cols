@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bind-cols
+# key: bc;
+# --
+bind_cols($0)

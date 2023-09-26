@@ -1,0 +1,10 @@
+# key: ccf>
+# name: code-chunk-bookdown-figure
+# --
+(ref:${1:TODO}) FIXME
+
+\`\`\`{r $1, echo = FALSE, fig.cap = '(ref:$1)', message = FALSE, warning = FALSE}
+$0
+\`\`\`
+
+FIXME \@ref(fig:$1) FIXME

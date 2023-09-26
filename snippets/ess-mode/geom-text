@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-text
+# key: gt;
+# --
+geom_text(mapping = aes(label = $0))

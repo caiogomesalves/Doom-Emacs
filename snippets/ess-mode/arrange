@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: arrange
+# key: a;
+# --
+arrange($0)

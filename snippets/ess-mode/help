@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: help
+# key: h;
+# --
+help($1, help_type = "html")$0

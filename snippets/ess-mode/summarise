@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: summarise
+# key: s;
+# --
+summarise($0)

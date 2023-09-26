@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: as-character
+# key: ac;
+# --
+as.character($1)$0

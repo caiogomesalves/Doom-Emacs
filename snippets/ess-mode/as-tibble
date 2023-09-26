@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: as-tibble
+# key: at;
+# --
+as_tibble($1)$0

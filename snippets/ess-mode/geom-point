@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-point
+# key: gp;
+# --
+geom_point($0)

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pivot-longer
+# key: pl;
+# --
+pivot_longer(cols = $1,
+             names_to = ${2:"names"},
+             values_to = ${3:"values"})

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: code-chunk-hide-all
+# key: cch>
+# --
+\`\`\`{r, include = FALSE}
+$0
+\`\`\`

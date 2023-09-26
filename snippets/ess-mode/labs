@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: labs
+# key: labs;
+# --
+labs(x = ${1:"x"}, y = ${2:"y"}, color = ${3:"color"})$0

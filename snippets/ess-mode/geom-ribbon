@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: geom-ribbon
+# key: gr;
+# --
+geom_ribbon(mapping = aes(ymin = ${1:lwr}, ymax = ${2:upr}),
+            alpha = 0.2)$0

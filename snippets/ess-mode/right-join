@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: right-join
+# key: rj;
+# --
+right_join($0)

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: facet-grid
+# key: fg;
+# --
+facet_grid(facets = $1)$0

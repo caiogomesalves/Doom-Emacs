@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-bar
+# key: gb;
+# --
+geom_bar()$0

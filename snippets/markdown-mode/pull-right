@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pull-right
+# key: .pr>
+# --
+.pull-right[
+  $0
+]

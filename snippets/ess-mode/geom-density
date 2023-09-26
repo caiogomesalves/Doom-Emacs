@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-density
+# key: gd;
+# --
+geom_density($0)

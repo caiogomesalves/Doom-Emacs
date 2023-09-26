@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: as-numeric
+# key: an;
+# --
+as.numeric($1)$0

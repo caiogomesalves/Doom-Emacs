@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: anti-join
+# key: aj;
+# --
+anti_join($0)

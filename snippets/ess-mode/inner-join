@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inner-join
+# key: ij;
+# --
+inner_join($0)

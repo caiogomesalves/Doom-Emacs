@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-hline
+# key: ghl;
+# --
+geom_hline(yintercept = ${1:0})$0

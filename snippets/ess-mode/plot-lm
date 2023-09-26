@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Walmes Zeviani
+# name: plot-lm
+# key: plotlm;
+# --
+par(mfrow = c(2, 2))
+plot(${1:m0})
+layout(1)$0

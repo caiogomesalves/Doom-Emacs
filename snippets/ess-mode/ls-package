@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ls-package
+# key: ls;
+# --
+ls("package:$1")$0

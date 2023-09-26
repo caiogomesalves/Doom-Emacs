@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: code-chunk-echo-false
+# key: cce>
+# --
+\`\`\`{r, echo = FALSE}
+$0
+\`\`\`

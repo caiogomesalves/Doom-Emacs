@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# contributor: Walmes Zeviani
+# name: code-separation
+# key: #-
+# --
+#---- ${1:TODO} -----------------------------

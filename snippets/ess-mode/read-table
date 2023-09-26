@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read-table
+# key: rt;
+# --
+read.table(file = $1, header = TRUE, sep = "\t")$0

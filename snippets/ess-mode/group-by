@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: group-by
+# key: g;
+# --
+group_${1:by}($0)

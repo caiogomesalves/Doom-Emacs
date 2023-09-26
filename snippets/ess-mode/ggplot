@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ggplot
+# key: gg;
+# --
+ggplot(data = $1,
+       mapping = aes(x = $2, y = $3))$0

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: code-chunk-image
+# key: cci>
+# --
+\`\`\`{r, out.width = "${1:400px}", fig.cap = cap, echo = FALSE, message = FALSE, warning = FALSE}
+cap <- "${2:FIXME.}"
+knitr::include_graphics("./img/${3:FIXME}")
+\`\`\`
+$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: as-integer
+# key: ai;
+# --
+as.integer($1)$0

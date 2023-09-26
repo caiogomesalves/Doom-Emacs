@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.out
+*~
+*.elc
+essh.el
+electric-spacing-r.el
+hi-lock.el
+

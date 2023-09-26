@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: geom-histogram
+# key: gh;
+# --
+geom_histogram($0)

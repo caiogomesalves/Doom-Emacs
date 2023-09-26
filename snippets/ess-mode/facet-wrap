@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: facet-wrap
+# key: fw;
+# --
+facet_wrap(facets = $0)

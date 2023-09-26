@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: code-chunk-hide-results
+# key: cchr>
+# --
+\`\`\`{r, results = "hide", message = FALSE, warning = FALSE}
+$0
+\`\`\`

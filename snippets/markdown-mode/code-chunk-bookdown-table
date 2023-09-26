@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: code-chunk-bookdown-table
+# key: cct>
+# --
+(ref:${1:TODO}) FIXME
+
+\`\`\`{r $1, echo = FALSE, message = FALSE, warning = FALSE}
+cap <- '(ref:$1)'
+$0
+\`\`\`
+
+FIXME \@ref(tab:$1) FIXME

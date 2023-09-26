@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bind-rows
+# key: br;
+# --
+bind_rows(.id = ${1:NULL})$0

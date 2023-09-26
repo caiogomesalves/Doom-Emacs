@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rename
+# key: r;
+# --
+rename(${1:"new"} = ${2:"old"})$0
