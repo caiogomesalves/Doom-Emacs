@@ -43,12 +43,9 @@
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or
 ;; xlfd font string. You generally only need these two:
 (setq doom-font
-      (font-spec :family "monospace"
+      (font-spec :family "Fira Code Nerd Font"
                  :size 12
-                 :weight 'semi-light)
-      doom-variable-pitch-font
-      (font-spec :family "mono"
-                 :size 14))
+                 :weight 'medium))
 
 ;; There are two ways to load a theme. Both assume the theme is
 ;; installed and available. You can either set `doom-theme' or manually
@@ -463,7 +460,7 @@
           ess-indent-offset 4)
     ;; (setq lsp-diagnostics-provider :none)
     (setq ;; ess-r-backend 'lsp
-          ess-style 'RStudio)
+          ess-style 'C++)
     )
   :bind
   (("C-S-<f5>" . ess-eval-chunk)
@@ -814,7 +811,7 @@
    mode
    '(("\\(^\\|[[:space:]]\\)@[[:alnum:]_.]+\\>"
       0 'font-lock-function-name-face t))
-   ;; @walmes, @param, @return
+   ;; @caio, @param, @return
    ))
 
 (defun rmd-mode ()
@@ -854,7 +851,7 @@
   ("C-c l m" . hl-todo-previous)
   ("C-c l n" . hl-todo-next)
   :config
-  (message "final do arquivo")
+  (message "Final do arquivo")
   (global-hl-todo-mode t)
   (add-to-list 'hl-todo-keyword-faces '("IMPROVE"     font-lock-constant-face bold))
   (add-to-list 'hl-todo-keyword-faces '("QUESTION"    font-lock-constant-face bold))

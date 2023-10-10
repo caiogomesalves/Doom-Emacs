@@ -52,3 +52,4 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'customize-themes 'disabled nil)
+(put 'customize-face 'disabled nil)
