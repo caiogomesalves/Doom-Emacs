@@ -212,16 +212,16 @@
          (- (+ fill-column 1)
             (how-many "-" (line-beginning-position) (point) t))))
     (wz-right-align-commented-text
-     "Prof. Dr. Walmes M. Zeviani"
+     "Caio Gomes Alves"
      comment-char-size)
     (wz-right-align-commented-text
-     "leg.ufpr.br/~walmes · github.com/walmes"
+     "github.com/caiogomesalves"
      comment-char-size)
     (wz-right-align-commented-text
-     "walmes@ufpr.br · @walmeszeviani"
+     "caio.gomesalves@ufpr.br"
      comment-char-size)
     (wz-right-align-commented-text
-     "Laboratory of Statistics and Geoinformation (LEG)"
+     "Programa de Educação Tutorial (PET-Estatística)"
      comment-char-size)
     (wz-right-align-commented-text
      "Department of Statistics · Federal University of Paraná"

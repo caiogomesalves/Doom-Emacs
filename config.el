@@ -50,7 +50,7 @@
 ;; There are two ways to load a theme. Both assume the theme is
 ;; installed and available. You can either set `doom-theme' or manually
 ;; load a theme with the `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+
 ;; (use-package! spacemacs-theme
 ;;   :init (load-theme 'spacemacs-dark t))
 
@@ -878,7 +878,7 @@
   (add-to-list 'hl-todo-keyword-faces '("OKAY"        success bold))
   (add-to-list 'hl-todo-keyword-faces '("GOOD"        success bold))
   (add-to-list 'hl-todo-keyword-faces '("SOLVED"      success bold))
-  (add-to-list 'hl-todo-keyword-faces '("WALMES"    . hl-todo-good-words))
+  (add-to-list 'hl-todo-keyword-faces '("CAIO"    . hl-todo-good-words))
   )
 
 ;;----------------------------------------------------------------------
