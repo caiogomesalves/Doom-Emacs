@@ -215,13 +215,10 @@
      "Caio Gomes Alves"
      comment-char-size)
     (wz-right-align-commented-text
-     "github.com/caiogomesalves"
-     comment-char-size)
-    (wz-right-align-commented-text
      "caio.gomesalves@ufpr.br"
      comment-char-size)
     (wz-right-align-commented-text
-     "Programa de Educação Tutorial (PET-Estatística)"
+     "Laboratory of Statistics and Geoinformation (LEG)"
      comment-char-size)
     (wz-right-align-commented-text
      "Department of Statistics · Federal University of Paraná"
